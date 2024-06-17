@@ -1,7 +1,7 @@
 import { v4 as uuid } from 'uuid';
+
 const qz = {
     data: [
-        // 1st Quiz Card --> will have title, category, description, quiz,
         {
             id: uuid(),
             category: "marvel",
@@ -9,18 +9,16 @@ const qz = {
             title: "Marvel",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique quis nunc eget rutrum",
             quiz: [
-                //1st question and options
                 {
                     id: uuid(),
                     question: "Black Panther is set in which fictional country?",
                     options: [
-                        { id: uuid(), option: "Waka", isCorrect: true },
+                        { id: uuid(), option: "Wakanda", isCorrect: true },
                         { id: uuid(), option: "Takanda", isCorrect: false },
                         { id: uuid(), option: "Zakanda", isCorrect: false },
                         { id: uuid(), option: "Jakanda", isCorrect: false }
                     ]
                 },
-                 //2nd question and options
                 {
                     id: uuid(),
                     question: "Who rescued Tony Stark and Nebula from space?",
@@ -31,7 +29,6 @@ const qz = {
                         { id: uuid(), option: "Hulk", isCorrect: false }
                     ]
                 },
-                 //3rd question and options
                 {
                     id: uuid(),
                     question: "Thor's Mjolnir is made from the metal of a dying ___?",
@@ -42,7 +39,6 @@ const qz = {
                         { id: uuid(), option: "Sun", isCorrect: false }
                     ]
                 },
-                 //4th question and options
                 {
                     id: uuid(),
                     question: "What did Thor say about Jane Foster's catchphrase?",
@@ -55,7 +51,6 @@ const qz = {
                 },
             ]
         },
-        //2nd quiz
         {
             id: uuid(),
             category: "dc",
@@ -105,8 +100,56 @@ const qz = {
                 },
             ]
         },
-
+        // More quizzes can be added below
+        {
+            id: uuid(),
+            category: "general",
+            image: "https://example.com/general-quiz-image.jpg",
+            title: "General Knowledge",
+            description: "Test your knowledge with this diverse set of questions from various fields.",
+            quiz: [
+                {
+                    id: uuid(),
+                    question: "Which planet is known as the Red Planet?",
+                    options: [
+                        { id: uuid(), option: "Earth", isCorrect: false },
+                        { id: uuid(), option: "Mars", isCorrect: true },
+                        { id: uuid(), option: "Venus", isCorrect: false },
+                        { id: uuid(), option: "Jupiter", isCorrect: false }
+                    ]
+                },
+                {
+                    id: uuid(),
+                    question: "Who painted the Mona Lisa?",
+                    options: [
+                        { id: uuid(), option: "Vincent van Gogh", isCorrect: false },
+                        { id: uuid(), option: "Pablo Picasso", isCorrect: false },
+                        { id: uuid(), option: "Leonardo da Vinci", isCorrect: true },
+                        { id: uuid(), option: "Michelangelo", isCorrect: false }
+                    ]
+                },
+                {
+                    id: uuid(),
+                    question: "Which country hosted the first modern Olympic Games?",
+                    options: [
+                        { id: uuid(), option: "France", isCorrect: true },
+                        { id: uuid(), option: "Greece", isCorrect: false },
+                        { id: uuid(), option: "United States", isCorrect: false },
+                        { id: uuid(), option: "Italy", isCorrect: false }
+                    ]
+                },
+                {
+                    id: uuid(),
+                    question: "What is the largest organ of the human body?",
+                    options: [
+                        { id: uuid(), option: "Liver", isCorrect: false },
+                        { id: uuid(), option: "Heart", isCorrect: false },
+                        { id: uuid(), option: "Skin", isCorrect: true },
+                        { id: uuid(), option: "Lung", isCorrect: false }
+                    ]
+                },
+            ]
+        }
     ]
-}
-
+};
 export default qz;

@@ -14,7 +14,7 @@ const qz = {
                     id: uuid(),
                     question: "Black Panther is set in which fictional country?",
                     options: [
-                        { id: uuid(), option: "Wakanda", isCorrect: true },
+                        { id: uuid(), option: "Waka", isCorrect: true },
                         { id: uuid(), option: "Takanda", isCorrect: false },
                         { id: uuid(), option: "Zakanda", isCorrect: false },
                         { id: uuid(), option: "Jakanda", isCorrect: false }
